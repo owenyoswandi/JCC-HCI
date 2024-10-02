@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F5EFE7;
+}
+
+header{
+    padding: 1vw;
+    padding-bottom: 2vw;
+    background-color: #213555;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+li,a{
+    font-family: "Hammersmith One";
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: white;
+    text-decoration: none;
+    background-color: #213555;
+}
+
+.logo:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    background-color: #213555;
+    justify-content: center;
+    align-items: center;
+    width: 49vw;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+.menu{
+    list-style: none;
+    background-color: #213555;
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 4.6vw;
+    margin-left: 4.6vw;
+}
+
+.menu li a{
+    transition: all 0.3s ease 0s;
+}
+
+.menu li a:hover{
+    color: #D8C4B6;
+}
+
+.content_top{
+    position: relative;
+    z-index: 1;
+}
+
+.conference{
+    width: 90%;
+    height: auto;
+    margin-top: 10vw;
+    z-index: 0;
+    box-shadow: .1vw .1vw .1vw rgba(0, 0, 0, 0.3);
+}
+
+.buttondown{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3%;
+    background-color: white;
+    z-index: 1;
+}
+
+.buttondown:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#middle{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vw;
+}
+
+.h1{
+    font-family: "Hammersmith One";
+    font-size: 2.2vw;
+    margin-bottom: 1vw;
+    z-index: 0;
+}
+
+.iotbox {
+    position: relative;
+    width: 42vw;
+    height: 28vw;
+    z-index: 0;
+    display: flex;
+}
+
+.box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #D8C4B6;
+    box-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.3);
+}
+
+.iot{
+    position: absolute;
+    width: 40vw;
+    top: .6vw;
+    left: 1vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.moreinfobutton{   
+    position: absolute;
+    cursor: pointer;
+    margin-top: 22vw;
+}
+
+.box2{
+    position: relative;
+    width: 15vw;
+    height: 2.5vw;
+    background-color: #4F709C;
+    box-shadow: .1vw .1vw .1vw rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.moreinfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Calibri;
+    font-size: 1.5vw;
+    color: white;
+    background-color: #4F709C;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    padding: 0.5vw 0;
+  }
+
+#bottom{
+    position: relative;
+    background-color: #213555;
+    height: 7vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Copyright{
+    position: absolute;
+    background-color: #213555;
+    bottom: 0;
+    left: 2vw;
+    color: grey;
+    padding: 1vw;
+    font-family: Calibri;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.follow{
+    position: absolute;
+    background-color: #213555;
+    font-family: "Hammersmith One";
+    color: white;
+    font-size: 1.5vw;
+    right: 18vw;
+    top: 1.5vw;
+}
+
+.facebook{
+    position: absolute;
+    background-color: #213555;
+    height: 2.2vw;
+    margin-top: 3.1vw;
+    right: 19.8vw;
+}
+
+.instagram{
+    position: absolute;
+    background-color: #213555;
+    height: 1.5vw;
+    margin-top: 3.5vw;
+    right: 24.1vw;
+}
+
+.twitter{
+    position: absolute;
+    background-color: #213555;
+    height: 1.5vw;
+    margin-top: 3.5vw;
+    right: 22.1vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+      width: 80vw;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .menu li {
+      margin-right: 2vw;
+      margin-left: 2vw;
+    }
+  
+    li, a {
+      font-size: 2vw;
+    }
+  
+    .content {
+      margin-top: 4vw;
+      min-height: 5vh;
+    }
+  
+    .title {
+      margin-top: 2vw;
+      font-size: 5vw;
+    }
+  
+    #text {
+      font-size: 3vw;
+    }
+
+    #bottom{
+        height: 13vw;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+    }
+
+    .Copyright{
+        font-size: 1.5vw;
+    }
+
+    .follow{
+        top: 4vw;
+        font-size: 2.2vw;
+    }
+
+    .instagram{
+        top: 3.7vw;
+        width: 2vw;
+        height: auto;
+        right: 27.5vw;
+    }
+
+    .twitter{
+        top: 3.7vw;
+        width: 2vw;
+        height: auto;
+        right: 24.2vw;
+    }
+
+    .facebook{
+        top: 3.5vw;
+        width: 3.4vw;
+        height: auto;
+        right: 20.6vw;
+    }
+
+    .conference{
+        width: 100%;
+        height: auto;
+        padding-top: 5vw;
+    }
+
+    .iotbox{
+        width: 59vw;
+        height: 39vw;
+    }
+
+    .iot{
+        width: 57vw;;
+    }
+    
+    .moreinfo{
+        font-size: 2.2vw;
+    }
+
+    .box2{
+        width: 20vw;
+        height: 4vw;
+    }
+
+    .moreinfobutton{
+        margin-top: 30vw;
+    }
+
+    .h1{
+        font-size: 3vw;
+    }
+
+    #middle{
+        height: 53vw;
+    }
+}

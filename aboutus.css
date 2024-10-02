@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F5EFE7;
+}
+
+header {
+    padding: 1vw;
+    padding-bottom: 2vw;
+    background-color: #213555;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0; 
+}
+
+li, a {
+    font-family: "Hammersmith One";
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: white;
+    text-decoration: none;
+    background-color: #213555;
+}
+
+header img {
+    width: 50%;
+    height: auto;
+    background-color: #213555;
+}
+
+.logo:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    background-color: #213555;
+    justify-content: center;
+    align-items: center;
+    width: 49vw;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+.menu {
+    list-style: none;
+    background-color: #213555;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 4.6vw;
+    margin-left: 4.6vw;
+}
+
+.menu li a {
+    transition: all 0.3s ease 0s;
+}
+
+.menu li a:hover {
+    color: #D8C4B6;
+}
+
+body {
+    padding-top: 6vw;
+}
+
+.content {
+    position: relative;
+    margin-top: 10vw;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Hammersmith One";
+    font-size: 2vw;
+}
+
+#text {
+    font-family: Calibri;
+    text-align: center;
+    font-size: 1.05vw;
+}
+
+.text1 {
+    margin-top: 1vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: auto;
+    margin: 10vw;  
+}
+
+.exc {
+    position: absolute;
+    top: 10vw;
+    left: 16vw;
+    width: 25vw;
+    height: auto;
+}
+
+.net {
+    position: absolute;
+    top: 10vw;
+    right: 16vw;
+    width: 25vw;
+    height: auto;
+}
+
+.text-contain {
+    display: flex;
+    justify-content: space-between;
+    width: 77%; /* Adjust the width as needed */
+    margin-bottom: 4vw;
+}
+
+.text2, .text3 {
+    text-align: center;
+    font-family: Calibri;
+    font-size: 1.05vw;
+    margin-bottom: 1vw;
+    padding: 0 1vw;
+    flex-basis: 45%; /* Adjust the width as needed */
+}
+
+#bottom{
+    position: relative;
+    background-color: #213555;
+    height: 7vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+.Copyright{
+    position: absolute;
+    background-color: #213555;
+    bottom: 0;
+    left: 2vw;
+    color: grey;
+    padding: 1vw;
+    font-family: Calibri;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.follow{
+    position: absolute;
+    background-color: #213555;
+    font-family: "Hammersmith One";
+    color: white;
+    font-size: 1.5vw;
+    right: 18vw;
+    top: 1.5vw;
+}
+
+.facebook{
+    position: absolute;
+    background-color: #213555;
+    height: 2.2vw;
+    margin-top: 3.1vw;
+    right: 19.8vw;
+}
+
+.instagram{
+    position: absolute;
+    background-color: #213555;
+    height: 1.5vw;
+    margin-top: 3.5vw;
+    right: 24.1vw;
+}
+
+.twitter{
+    position: absolute;
+    background-color: #213555;
+    height: 1.5vw;
+    margin-top: 3.5vw;
+    right: 22.1vw;
+}
+
+.error-popup {
+    position: absolute;
+    background-color: #FF8080;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {    
+    .logo {
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    li,
+    a {
+        font-size: 2vw;
+    }
+
+    body {
+        padding-top: 8vw;
+    }
+
+    #text {
+        font-size: 2vw;
+    }
+
+    .title{
+        font-size: 4vw;
+        margin-top: 2vw;
+    }
+
+    .content {
+        margin-top: 8vw;
+        max-height: calc(100vh - 15vw);
+    }
+
+    .exc {
+        top: 26vh;
+        left: 22vh;
+    }
+
+    .net {
+        top: 26vh;
+        right: 22vh;
+    }
+
+    #text {
+        font-size: 1.9vw;
+        flex-basis: 100%;
+    }
+
+    #bottom{
+        position: fixed;
+        height: 13vw;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+    }
+
+    .Copyright{
+        font-size: 1.5vw;
+    }
+
+    .follow{
+        top: 4vw;
+        font-size: 2.2vw;
+    }
+
+    .instagram{
+        top: 3.7vw;
+        width: 2vw;
+        height: auto;
+        right: 27.5vw;
+    }
+
+    .twitter{
+        top: 3.7vw;
+        width: 2vw;
+        height: auto;
+        right: 24.2vw;
+    }
+
+    .facebook{
+        top: 3.5vw;
+        width: 3.4vw;
+        height: auto;
+        right: 20.6vw;
+    }
+}
